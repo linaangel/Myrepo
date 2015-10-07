@@ -19,6 +19,6 @@ function draw() {
 
   if (Ycoord[j] > windowHeight) {
    Ycoord[j] = 0;
-  }
+      }
     }
   }
