@@ -1,0 +1,333 @@
+@import "settings";
+@import "foundation";
+html,
+body {
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    width: 100%;
+}
+
+.columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+}
+
+.top {
+    padding-bottom: 1em;
+    margin-top: 1em;
+}
+
+.logo {
+    max-height: 95px;
+    padding: 0.3em;
+}
+
+.loc {
+    max-width: 200px;
+}
+
+p {
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    //Tablet only
+    @media only screen and (max-width: 50em) {
+        font-size: 1.7em;
+    }
+    //Mobile only
+    @media only screen and (max-width: 40em) {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    @media only screen and (max-width: 25em) {
+        font-size: 1.1em;
+    }
+}
+
+h2 {
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+    font-size: 1.8em;
+    font-weight: 800;
+    text-align: left;
+    //Tablet only
+    @media only screen and (max-width: 50em) {
+        font-size: 1.5em;
+    }
+    //Mobile only
+    @media only screen and (max-width: 40em) {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    @media only screen and (max-width: 25em) {
+        font-size: 1em;
+    }
+}
+
+.header-parent {
+    position: relative;
+    height: 100px;
+    //Mobile Only 
+    @media only screen and (max-width: 40em) {
+        height: 70px;
+    }
+}
+
+.header-child {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.entry {
+    position: relative;
+    width: 100%;
+}
+
+button.tiny,
+.button.tiny {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+button,
+.button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: #FFFFFF;
+    transition: background-color 300ms ease-out;
+}
+
+button.alert,
+.button.alert {
+    background-color: dodgerblue;
+    height: 2.3125rem;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    font-size: 14px;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+
+button.alert:hover,
+button.alert:focus,
+.button.alert:hover,
+.button.alert:focus {
+    background-color: yellow;
+}
+
+button.alert:hover,
+button.alert:focus,
+.button.alert:hover,
+.button.alert:focus {
+    color: black;
+}
+
+#location,
+#temperature,
+#tempC,
+.punt {
+    font-size: 1.6em;
+}
+
+#location {
+    font-weight: 600;
+}
+
+#date {
+    font-size: 1.2em;
+}
+
+.humtitle {
+    margin-top: 1.6em;
+}
+
+#humidity,
+.humtitle,
+#wind,
+.windtitle,
+#max,
+.maxtitle,
+#min,
+.mintitle {
+    font-size: 1em;
+    margin-bottom: 0.2em;
+}
+
+#maxmin {
+    margin-bottom: 0;
+}
+
+#wtinfo {
+    padding: 1.5em;
+}
+
+#weatherbg {
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+    border: 3px;
+    border-color: #000;
+    border-style: solid;
+    background-color: #ed8629;
+}
+
+#weatherbg {
+    transition: 1s all;
+}
+
+#weatherbg.Clouds {
+    background-color: #b3b3b3;
+}
+
+#weatherbg.Clear {
+    background-color: #ed8629;
+}
+
+#weatherbg.Rain {
+    background-color: #0000ff;
+}
+
+#weatherbg.Snow {
+    background-color: #fff;
+}
+
+#weatherbg.Thunderstorm {
+    background-color: #666;
+}
+
+#weatherbg.Extreme {
+    background-color: #d4145a;
+}
+
+#weatherbg {
+    color: #fff !important;
+    text-align: left;
+}
+
+.weathericon {
+    width: 100%;
+}
+
+.width-div {
+    padding: 1.5em;
+}
+
+.nextdays {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+#nextdaysinfo {
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+    padding: 0.5em;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    @media only screen and (min-width: 40em) {
+        font-size: 2em;
+    }
+}
+
+.days,
+.tempmax,
+.tempmin {
+    padding: 0px;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.days {
+    font-weight: 800;
+}
+
+.tempmax {
+    color: #ed8629;
+}
+
+.tempmin {
+    color: #0000ff;
+}
+
+footer {
+    font-size: 0.9em;
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    height: 3em;
+}
+
+.copyright {
+    line-height: 3em;
+    float: left;
+    margin-left: 2em;
+}
+
+.social {
+    float: right;
+    align-self: center;
+    height: 2em;
+    margin: 0.5em;
+    margin-right: 2em;
+}
+
+.by {
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    font-size: 0.6em;
+}
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";

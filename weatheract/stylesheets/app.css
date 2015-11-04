@@ -9439,12 +9439,14 @@ th.hide-for-touch {
     display: none !important;
   }
 }
-/* line 4, ../scss/app.scss */
+/* line 3, ../scss/app.scss */
+html,
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  width: 100%;
 }
 
-/* line 8, ../scss/app.scss */
+/* line 9, ../scss/app.scss */
 .columns {
   position: relative;
   padding-left: 0.9375rem;
@@ -9452,82 +9454,121 @@ body {
   float: left;
 }
 
-/* line 15, ../scss/app.scss */
+/* line 16, ../scss/app.scss */
+.top {
+  padding-bottom: 1em;
+  margin-top: 1em;
+}
+
+/* line 21, ../scss/app.scss */
 .logo {
-  min-width: 60px;
   max-height: 95px;
-  vertical-align: middle;
-  border: 0px;
+  padding: 0.3em;
 }
 
-/* line 22, ../scss/app.scss */
-.padlogo {
-  padding: 0px;
-  max-width: 82px;
-}
-
-/* line 27, ../scss/app.scss */
-.busqueda {
-  padding-top: 30px;
-}
-
-/* line 31, ../scss/app.scss */
+/* line 26, ../scss/app.scss */
 .loc {
   max-width: 200px;
 }
 
-/* line 35, ../scss/app.scss */
+/* line 30, ../scss/app.scss */
 p {
   vertical-align: middle;
+  margin-bottom: 0;
 }
 
-/* line 39, ../scss/app.scss */
-p.slogan1 {
-  font-size: 2.3vmax;
-  font-size: 4.8vmin;
+/* line 35, ../scss/app.scss */
+h1 {
+  font-size: 2em;
   font-weight: 800;
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  padding: 0px;
-  max-height: 26px;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+@media only screen and (max-width: 50em) {
+  /* line 35, ../scss/app.scss */
+  h1 {
+    font-size: 1.7em;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 35, ../scss/app.scss */
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 25em) {
+  /* line 35, ../scss/app.scss */
+  h1 {
+    font-size: 1.1em;
+  }
 }
 
-/* line 50, ../scss/app.scss */
-p.slogan2 {
-  font-size: 2.1vmax;
-  font-size: 4.2vmin;
+/* line 55, ../scss/app.scss */
+h2 {
+  margin-top: 0em;
+  margin-bottom: 0.2em;
+  font-size: 1.8em;
   font-weight: 800;
   text-align: left;
-  padding: 0px;
-  max-height: 26px;
+}
+@media only screen and (max-width: 50em) {
+  /* line 55, ../scss/app.scss */
+  h2 {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 55, ../scss/app.scss */
+  h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 25em) {
+  /* line 55, ../scss/app.scss */
+  h2 {
+    font-size: 1em;
+  }
 }
 
-/* line 59, ../scss/app.scss */
-.top {
-  margin: 20px;
+/* line 75, ../scss/app.scss */
+.header-parent {
+  position: relative;
+  height: 100px;
+}
+@media only screen and (max-width: 40em) {
+  /* line 75, ../scss/app.scss */
+  .header-parent {
+    height: 70px;
+  }
 }
 
-/* line 63, ../scss/app.scss */
-.search {
-  margin-left: 25px;
-  margin-right: 25px;
+/* line 84, ../scss/app.scss */
+.header-child {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* line 68, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 .entry {
-  margin: 0px;
-  align-self: flex-end;
-  padding: 0px;
+  position: relative;
+  width: 100%;
 }
 
-/* line 74, ../scss/app.scss */
-button.tiny, .button.tiny {
+/* line 96, ../scss/app.scss */
+button.tiny,
+.button.tiny {
   padding: 0.5rem;
+  width: 100%;
 }
 
-/* line 78, ../scss/app.scss */
-button, .button {
+/* line 102, ../scss/app.scss */
+button,
+.button {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
@@ -9541,108 +9582,216 @@ button, .button {
   transition: background-color 300ms ease-out;
 }
 
-/* line 92, ../scss/app.scss */
-button.alert, .button.alert {
+/* line 117, ../scss/app.scss */
+button.alert,
+.button.alert {
   background-color: dodgerblue;
   height: 2.3125rem;
   border: 2px;
   border-color: black;
   border-style: solid;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
 }
 
-/* line 102, ../scss/app.scss */
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+/* line 128, ../scss/app.scss */
+button.alert:hover,
+button.alert:focus,
+.button.alert:hover,
+.button.alert:focus {
   background-color: yellow;
 }
 
-/* line 106, ../scss/app.scss */
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+/* line 135, ../scss/app.scss */
+button.alert:hover,
+button.alert:focus,
+.button.alert:hover,
+.button.alert:focus {
   color: black;
 }
 
-/* line 110, ../scss/app.scss */
-.weather {
-  padding-left: 30px;
-  padding-right: 30px;
+/* line 142, ../scss/app.scss */
+#location,
+#temperature,
+#tempC,
+.punt {
+  font-size: 1.6em;
 }
 
-/* line 115, ../scss/app.scss */
-.location, .temperature, .date, .otherinfo {
-  font-size: 1vmax;
-  font-size: 4.8vmin;
+/* line 149, ../scss/app.scss */
+#location {
+  font-weight: 600;
+}
+
+/* line 153, ../scss/app.scss */
+#date {
+  font-size: 1.2em;
+}
+
+/* line 157, ../scss/app.scss */
+.humtitle {
+  margin-top: 1.6em;
+}
+
+/* line 161, ../scss/app.scss */
+#humidity,
+.humtitle,
+#wind,
+.windtitle,
+#max,
+.maxtitle,
+#min,
+.mintitle {
+  font-size: 1.3em;
+  margin-bottom: 0.2em;
+}
+
+/* line 173, ../scss/app.scss */
+#maxmin {
+  margin-bottom: 0;
+}
+
+/* line 177, ../scss/app.scss */
+#wtinfo {
+  padding: 1.5em;
+}
+
+/* line 181, ../scss/app.scss */
+#weatherbg {
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  border: 3px;
+  border-color: #000;
+  border-style: solid;
+  background-color: #ed8629;
+}
+
+/* line 190, ../scss/app.scss */
+#weatherbg {
+  transition: 1s all;
+}
+
+/* line 194, ../scss/app.scss */
+#weatherbg.Clouds {
+  background-color: #b3b3b3;
+}
+
+/* line 198, ../scss/app.scss */
+#weatherbg.Clear {
+  background-color: #ed8629;
+}
+
+/* line 202, ../scss/app.scss */
+#weatherbg.Rain {
+  background-color: #0000ff;
+}
+
+/* line 206, ../scss/app.scss */
+#weatherbg.Snow {
+  background-color: #fff;
+}
+
+/* line 210, ../scss/app.scss */
+#weatherbg.Thunderstorm {
+  background-color: #666;
+}
+
+/* line 214, ../scss/app.scss */
+#weatherbg.Extreme {
+  background-color: #d4145a;
+}
+
+/* line 218, ../scss/app.scss */
+#weatherbg {
+  color: #fff !important;
   text-align: left;
 }
 
-/* line 121, ../scss/app.scss */
-#weatherbg {
-  padding: 15px;
-  border: 3px;
-  border-color: black;
-  border-style: solid;
-  background-color: darkorange;
-}
-
-/* line 129, ../scss/app.scss */
+/* line 223, ../scss/app.scss */
 .weathericon {
-  max-height: 450px;
-  padding: inherit;
+  width: 100%;
 }
 
-/* line 134, ../scss/app.scss */
+/* line 227, ../scss/app.scss */
+.width-div {
+  padding: 1.5em;
+}
+
+/* line 231, ../scss/app.scss */
 .nextdays {
-  padding: 20px;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
 }
 
-/* line 138, ../scss/app.scss */
+/* line 236, ../scss/app.scss */
 #nextdaysinfo {
-  padding: 10px;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  padding: 0.5em;
   border: 3px;
   border-color: black;
   border-style: solid;
 }
+@media only screen and (min-width: 40em) {
+  /* line 236, ../scss/app.scss */
+  #nextdaysinfo {
+    font-size: 2em;
+  }
+}
 
-/* line 145, ../scss/app.scss */
-.days, .tempmax, .tempmin {
+/* line 248, ../scss/app.scss */
+.days,
+.tempmax,
+.tempmin {
   padding: 0px;
-  font-size: 2.5vmin;
+  font-size: 0.5em;
   text-align: center;
 }
 
-/* line 151, ../scss/app.scss */
+/* line 256, ../scss/app.scss */
 .days {
   font-weight: 800;
 }
 
-/* line 155, ../scss/app.scss */
+/* line 260, ../scss/app.scss */
 .tempmax {
-  color: darkorange;
+  color: #ed8629;
 }
 
-/* line 159, ../scss/app.scss */
+/* line 264, ../scss/app.scss */
 .tempmin {
-  color: dodgerblue;
+  color: #0000ff;
 }
 
-/* line 163, ../scss/app.scss */
-.social {
-  max-height: 25px;
-}
-
-/* line 167, ../scss/app.scss */
+/* line 268, ../scss/app.scss */
 footer {
-  font-size: 14px;
+  font-size: 0.9em;
   background-color: black;
   text-align: center;
-  padding: 5px;
-  color: white;
-  height: auto;
+  color: #fff;
+  height: 3em;
 }
 
-/* line 176, ../scss/app.scss */
+/* line 276, ../scss/app.scss */
+.copyright {
+  line-height: 3em;
+  float: left;
+  margin-left: 2em;
+}
+
+/* line 282, ../scss/app.scss */
+.social {
+  float: right;
+  align-self: center;
+  height: 2em;
+  margin: 0.5em;
+  margin-right: 2em;
+}
+
+/* line 290, ../scss/app.scss */
 .by {
+  width: 100%;
   text-align: center;
   padding: 3px;
-  font-size: 10px;
+  font-size: 0.6em;
 }
